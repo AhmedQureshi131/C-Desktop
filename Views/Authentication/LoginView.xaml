@@ -1,0 +1,175 @@
+﻿<Window x:Class="Paywall.Presentation.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paywall.Presentation.Views"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cal="http://www.caliburnproject.org"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Login" Height="500" Width="400">
+    <Window.Resources>
+       
+    </Window.Resources>
+    <Grid>
+        <TextBox HorizontalAlignment="Center" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Margin="50,46,120,0" Text="{Binding Path=Pin, Mode=OneWay}"/>
+        <Grid HorizontalAlignment="Left" Height="257" Margin="65,91,0,65" VerticalAlignment="Top" Width="267">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Button x:Name="btnOne" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="1" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="1" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="0" Grid.Row="1">
+                <Button x:Name="btnFour" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="4" />
+                            </cal:ActionMessage>
+                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="4" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="0" Grid.Row="2">
+                <Button x:Name="btnSeven" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="7" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="7" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="0">
+                <Button x:Name="btnTwo" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="2" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="2" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Button x:Name="btnFive" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="5" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="5" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Button x:Name="btnEight" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="8" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock Text="8" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" Grid.Row="0">
+                <Button x:Name="btnThree" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="3" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock Text="3" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" Grid.Row="1">
+                <Button x:Name="btnSix" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="6" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock Text="6" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" Grid.Row="2">
+                <Button x:Name="btnNine" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Height="Auto" BorderBrush="{StaticResource Black}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <cal:ActionMessage MethodName="EnterPinOne">
+                                <cal:Parameter Value="9" />
+                            </cal:ActionMessage>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Grid HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <TextBlock  Text="9" FontSize="36" HorizontalAlignment="Stretch" TextAlignment="Left" RenderTransformOrigin="0.5,-0.111" Margin="0,-16,0,16"></TextBlock>
+                    </Grid>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="248,46,0,0" VerticalAlignment="Top" Width="75" Height="26" BorderBrush="{StaticResource Black}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="ClearPin">
+                    </cal:ActionMessage>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="65,353,0,0" VerticalAlignment="Top" Width="267" Height="37" BorderBrush="{StaticResource Black}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <cal:ActionMessage MethodName="Login">
+                    </cal:ActionMessage>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+
+    </Grid>
+</Window>
